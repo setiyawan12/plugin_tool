@@ -30,7 +30,7 @@ app.on('ready', function() {
   mainWindow.setMenuBarVisibility(false)
 
   // Open the DevTools.
-  // mainWindow.openDevTools();    // requires a height 410px 
+  mainWindow.openDevTools();    // requires a height 410px 
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {

@@ -5,10 +5,10 @@ var is = require("electron-is");
 function appendOutput(msg) { getCommandOutput().value += (msg + '\n'); };
 function setStatus(msg) { getStatus().innerHTML = msg; };
 
-function backgroundProcessDesign() {
+function backgroundProcess() {
     const process = require('child_process');   // The power of Node.JS
 
-    var cmd = (is.windows()) ? ' ': './shell/design2.sh';
+    var cmd = (is.windows()) ? 'test.bat' : './shell/hehe.sh';
     // console.log('cmd:', cmd);
 
     var child = process.spawn(cmd);
